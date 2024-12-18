@@ -34,3 +34,10 @@ jobs:
 
     - name: 'Terraform Apply'
       run: terraform apply -auto-approve -var="project_id=${{ secrets.GCP_PROJECT_ID }}"
+
+      - name: 'Debug Base64 Decoding'
+      env:
+        GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+      run: |
+        echo "${GCP_SERVICE_ACCOUNT_KEY}" | base64 --decode > account.json
+        cat account.json
