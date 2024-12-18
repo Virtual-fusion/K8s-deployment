@@ -11,5 +11,5 @@ provider "google" {
   # Configuration options
     project = "devp_2240"
   region = "Europe west"
-  credentials = file ("gcp_key.json")
+  credentials = GCP_SERVICE_ACCOUNT_KEY ("gcp_key.json")
 }
