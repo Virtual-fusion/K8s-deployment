@@ -1,4 +1,4 @@
-resource "google_container_cluster" "Virtualfusion-GKE-cluster" {
+resource "google_container_cluster" "Virtualfusion-GKE-cluster1" {
   name     = var.cluster_name
   location = var.region
 
