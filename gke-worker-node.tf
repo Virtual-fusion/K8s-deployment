@@ -1,4 +1,4 @@
-resource "google_container_cluster" "Virtualfusion GKE cluster" {
+resource "google_container_cluster" "Virtualfusion-GKE-cluster" {
   name     = var.cluster_name
   location = var.region
   network  = google_compute_network.vpc.id
