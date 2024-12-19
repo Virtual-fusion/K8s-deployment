@@ -14,10 +14,10 @@ jobs:
     - name: 'Checkout Code'
       uses: actions/checkout@v3
 
-    - name: 'Set up Terraform'
-      uses: hashicorp/setup-terraform@v2
-      with:
-        terraform_version: 1.5.6 # Set the version you need
+    - name: Setorp/setup-terraform@v2
+      with: up Terraform'
+      uses: hashic
+      terraform_version: 1.5.6 # Set the version you need
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: 'Authenticate to GCP'
